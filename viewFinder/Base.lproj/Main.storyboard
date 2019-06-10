@@ -34,15 +34,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ViewFinder" id="9E7-Be-0Ce">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="bxD-GT-hjH">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UQc-D5-ZRC">
-                                <rect key="frame" x="302" y="0.0" width="92" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="40"/>
-                                <state key="normal" title="+"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="Flm-Ip-BSx">
                             <connections>
-                                <segue destination="aiH-uK-nj8" kind="show" id="w37-6W-LnJ"/>
+                                <segue destination="aiH-uK-nj8" kind="show" id="6LT-Sr-p5b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

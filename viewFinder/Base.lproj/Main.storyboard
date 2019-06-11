@@ -48,7 +48,7 @@
         <!--Add New Photo-->
         <scene sceneID="uCk-g1-gQY">
             <objects>
-                <viewController id="aiH-uK-nj8" sceneMemberID="viewController">
+                <viewController id="aiH-uK-nj8" customClass="AddPhotoViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ts0-lR-tNQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,31 +68,46 @@
                                 <rect key="frame" x="87" y="346" width="109" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="aiH-uK-nj8" eventType="touchUpInside" id="HcP-1x-8qN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMQ-1h-ASY">
                                 <rect key="frame" x="87" y="468" width="109" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="aiH-uK-nj8" eventType="touchUpInside" id="rSZ-CT-Fxg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUh-rz-sLp">
                                 <rect key="frame" x="218" y="346" width="109" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="photoLibrary:" destination="aiH-uK-nj8" eventType="touchUpInside" id="6at-Bh-mJC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulj-dt-K3j">
                                 <rect key="frame" x="218" y="468" width="109" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Album"/>
+                                <connections>
+                                    <action selector="photoAlbum:" destination="aiH-uK-nj8" eventType="touchUpInside" id="sbF-Xa-6P6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vdp-uR-hDM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="57x-1Y-hjm"/>
+                    <connections>
+                        <outlet property="newImage" destination="zVd-lP-29s" id="k0Z-k0-xGk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wC-u1-nho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921.7391304347827" y="-25.446428571428569"/>
+            <point key="canvasLocation" x="1754" y="-17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9IB-Vk-tlD">

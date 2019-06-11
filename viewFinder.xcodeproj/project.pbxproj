@@ -12,6 +12,7 @@
 		189C83BC22AEFB2300597E67 /* viewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 189C83BA22AEFB2300597E67 /* viewFinder.xcdatamodeld */; };
 		189C83BE22AEFB2500597E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189C83BD22AEFB2500597E67 /* Assets.xcassets */; };
 		189C83C122AEFB2500597E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C83BF22AEFB2500597E67 /* LaunchScreen.storyboard */; };
+		18ECC46322AFF2C400D3BDA5 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC46222AFF2C400D3BDA5 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		189C83BD22AEFB2500597E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		189C83C022AEFB2500597E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189C83C222AEFB2500597E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ECC46222AFF2C400D3BDA5 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				189C83B322AEFB2300597E67 /* AppDelegate.swift */,
 				189C83B722AEFB2300597E67 /* Main.storyboard */,
+				18ECC46222AFF2C400D3BDA5 /* AddPhotoViewController.swift */,
 				189C83BD22AEFB2500597E67 /* Assets.xcassets */,
 				189C83BF22AEFB2500597E67 /* LaunchScreen.storyboard */,
 				189C83C222AEFB2500597E67 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				189C83BC22AEFB2300597E67 /* viewFinder.xcdatamodeld in Sources */,
+				18ECC46322AFF2C400D3BDA5 /* AddPhotoViewController.swift in Sources */,
 				189C83B422AEFB2300597E67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +287,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZV7Q9F6QMK;
 				INFOPLIST_FILE = viewFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Anna.viewFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = AnnaT.viewFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,12 +305,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZV7Q9F6QMK;
 				INFOPLIST_FILE = viewFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Anna.viewFinder;
+				PRODUCT_BUNDLE_IDENTIFIER = AnnaT.viewFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

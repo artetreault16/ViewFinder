@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>ViewFinder requests access to the camera. Do you approve?</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ViewFinder requests access to the photo library. Do you approve?</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

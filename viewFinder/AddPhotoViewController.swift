@@ -10,6 +10,8 @@ import UIKit
 
 class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    var photos: [Photos] = []
+    
     var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -19,6 +21,8 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBOutlet weak var newImage: UIImageView!
+    
+    @IBOutlet weak var captionText: UITextField!
     
     @IBAction func takePhoto(_ sender: Any) {
         imagePicker.sourceType = .camera
@@ -35,8 +39,20 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func saveButton(_ sender: Any) {
-        
+    @IBAction func saveTapped(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            photoToSave.caption = captionText.text
+            
+            if let userImage = newImageView.image{
+                if let userImageData = UIImagePNGRepresentation(userImage){
+                    photoToSave.imageData = userImageData
+                }
+            }
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+            
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

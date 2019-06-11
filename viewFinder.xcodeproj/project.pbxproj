@@ -13,6 +13,7 @@
 		189C83BE22AEFB2500597E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189C83BD22AEFB2500597E67 /* Assets.xcassets */; };
 		189C83C122AEFB2500597E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C83BF22AEFB2500597E67 /* LaunchScreen.storyboard */; };
 		18ECC46322AFF2C400D3BDA5 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC46222AFF2C400D3BDA5 /* AddPhotoViewController.swift */; };
+		18ECC48A22B04DC600D3BDA5 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECC48922B04DC600D3BDA5 /* PhotoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		189C83C022AEFB2500597E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189C83C222AEFB2500597E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18ECC46222AFF2C400D3BDA5 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		18ECC48922B04DC600D3BDA5 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				189C83BF22AEFB2500597E67 /* LaunchScreen.storyboard */,
 				189C83C222AEFB2500597E67 /* Info.plist */,
 				189C83BA22AEFB2300597E67 /* viewFinder.xcdatamodeld */,
+				18ECC48922B04DC600D3BDA5 /* PhotoTableViewController.swift */,
 			);
 			path = viewFinder;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				189C83BC22AEFB2300597E67 /* viewFinder.xcdatamodeld in Sources */,
 				18ECC46322AFF2C400D3BDA5 /* AddPhotoViewController.swift in Sources */,
+				18ECC48A22B04DC600D3BDA5 /* PhotoTableViewController.swift in Sources */,
 				189C83B422AEFB2300597E67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
